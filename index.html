@@ -68,6 +68,9 @@
             font-weight: 700;
         }
         
+        h1{
+            font-size: 50px;
+        }
 
         h2{
             padding-top: 15px;
@@ -76,30 +79,37 @@
         p{
             font-size: 18px;
         }
-
+        
+        li{
+            font-size: 18px;
+        }
         body{
             font-family: system-ui;
             background:seashell;
             color: dimgray;
         }
 
+        pre{
+            font-size: 18px;
+            font-family: system-ui;
+        }
+
     </style>
     <body>
 
+        <!--Make a receipe tab!!-->
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
             <button class="tablinks" onclick="openTab(event, 'About')">About</button>
             <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
+            <button class="tablinks" onclick="openTab(event, 'Recipes')">Recipes</button>
         </div>
           
         <!--First Tab -Default-->
         <div id="Home" class="tabcontent">
             <h1 class = "center">Meagan Choo-Kang</h1>
             <img src = "Leafs.jpg" alt = "Illustration of leaves" class = "center" style="width:50%;">
-
-            
-        
-            
+  
         </div>
           
         <!--Second Tab-->
@@ -107,19 +117,18 @@
             <!--About-->
             <div id = "container"><h1 class = "content">Meagan<br> Choo-Kang</h1></div> 
             <h2>About</h2>
-            <p> Hello World! I'm a cognitive science student intersted in making <br>
-                progams and websites! This is currently a practice website to learn <br>
-                the basics of HTML and hopefully in the future this can become a <br>
-                functioning website! My goals is to add functioning tabs and maybe <br>
-                some buttons!</p>
+            
+            <pre>Hello World! I'm a <strong>cognitive science</strong> student intersted in making 
+progams and websites! I often get asked what <i>exactly</i> is cognitive science.
+It is the study of the mind from various perspectives, since the mind is very
+complex. These various perspectives are <strong>computer science, psychology, 
+linguistics, philosophy and neuroscience</strong>! The program that I am in, 
+is focused in using computer science to understand the mind. The mind works  
+alot like a computer program and I am interested in learning more about 
+computer science, while also learning about the mind!  
+            </pre>
 
-            <h2>Experience</h2>
-            <h3>Assitant to Director of Onboarding and Recuritment</h3>
-            <h4>@ Technolgap</h4>
-            <p>My role is welcoming new members by introducing them to Slack and <br>
-                making themn feel apart of the community. I am also in charge of <br>
-                increases engagement of new members, so that they feel a part of <br>
-                the community.</p>
+            <img src = "Brain.png" alt = "Illustration of Brain" style = "width:550px;">
 
             <h2>Interests</h2>
             <ul>
@@ -129,6 +138,14 @@
                 <li>Art</li>
             </ul>
 
+            <h2>Experience</h2>
+            <h3>Assitant to Director of Onboarding and Recuritment</h3>
+            <h4>@ Technolgap</h4>
+            <p>My role is welcoming new members by introducing them to Slack and <br>
+                making themn feel apart of the community. I am also in charge of <br>
+                increases engagement of new members, so that they feel a part of <br>
+                the community.</p>
+
             <!-- Displays image-->
             <h2>This is me!</h2>
             <img src = "DrawingOfMe.jpg" alt = "Picture of me" style = "height: 500px;">
@@ -137,7 +154,13 @@
           
         <!--Third Tab-->
         <div id="Art" class="tabcontent">
-            <h3>Art</h3>
+            <h1>Art</h1>
+            
+        </div>
+
+        <!--Fourth Tab-->
+        <div id="Recipes" class="tabcontent">
+            <h1>My Recipes</h1>
             
         </div>
     
