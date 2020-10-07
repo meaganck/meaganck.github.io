@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-       
-            // adds when window loads
-            window.onload = addElement
-
-            function addElement(){
-                let newDiv = document.createElement("div")
-
-                // text that is outputted
-                let newContent = document.createTextNode("Hello, I am from JavaScript") 
-
-                newDiv.appendChild(newContent)
-
-                let currentDiv = document.getElementById("test") 
-
-                // adds below this div
-                currentDiv.appendChild(newDiv)
-            }
-
-        </script>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <!-- Got code on how to make tabs on w3schools: https://www.w3schools.com/howto/howto_js_tabs.asp-->
     </head> 
     <style>
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            background-color: rosybrown;     
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 20px;
+            font-family: system-ui;
+            color:seashell;   
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: dimgray;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color:  dimgray;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+
         #container {
             display: inline-block;
-            padding: 75px;
-           
+            padding: 50px;
+            
+            background-color:rosybrown ;
+            border: 1px solid cornsilk;
+            margin: 5px;       
         }
+
         .content{
             margin:0;
             padding:10px;
-        
+            
             color:white;
             font-size: 50px;
             font-weight: 700;
         }
         
-        div {
-            border: 1px solid cornsilk;
-            margin: 5px;
-            padding: 5px;
-            background-color:rosybrown ;
-            color: white;
-        }
 
         h2{
             padding-top: 15px;
@@ -61,43 +85,81 @@
 
     </style>
     <body>
-        
-        <!--Title-->
-        <div id = "container"><h1 class = "content">Meagan<br> Choo-Kang</h1></div>
 
-        <!--About-->
-        <h2>About</h2>
-        <p> Hello World! I'm a cognitive science student intersted in making <br>
-            progams and websites! This is currently a practice website to learn <br>
-            the basics of HTML and hopefully in the future this can become a <br>
-            functioning website! My goals is to add functioning tabs and maybe <br>
-            some buttons!</p>
-
-        <h2>Experience</h2>
-        <h3>Assitant to Director of Onboarding and Recuritment</h3>
-        <h4>@ Technolgap</h4>
-        <p>My role is welcoming new members by introducing them to Slack and <br>
-            making them feel a part of the community. I am also in charge of <br>
-            increases engagement of new members, so that they feel a part of <br>
-            the community.</p>
-
-        <h2>Interests</h2>
-        <ul>
-            <li>Artificial Intelligence</li>
-            <li>Programming</li>
-            <li>Plants</li>
-            <li>Art</li>
-        </ul>
-
-        <!-- Displays image-->
-        <h2>This is me!</h2>
-        <img src = "DrawingOfMe.jpg" alt = "Picture of me" style = "height: 500px">
-        
-        <!-- Displays text from JavaScipt-->
-        <div id = "test">
-            <h1>Hello JavaScript</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
         </div>
-        <p></p>
+          
+        <!--First Tab -Default-->
+        <div id="Home" class="tabcontent">
+            <h1 class = "center">Meagan Choo-Kang</h1>
+            <img src = "Leafs.jpg" alt = "Illustration of leaves" class = "center" style="width:50%;">
+
+            
         
+            
+        </div>
+          
+        <!--Second Tab-->
+        <div id="About" class="tabcontent">
+            <!--About-->
+            <div id = "container"><h1 class = "content">Meagan<br> Choo-Kang</h1></div> 
+            <h2>About</h2>
+            <p> Hello World! I'm a cognitive science student intersted in making <br>
+                progams and websites! This is currently a practice website to learn <br>
+                the basics of HTML and hopefully in the future this can become a <br>
+                functioning website! My goals is to add functioning tabs and maybe <br>
+                some buttons!</p>
+
+            <h2>Experience</h2>
+            <h3>Assitant to Director of Onboarding and Recuritment</h3>
+            <h4>@ Technolgap</h4>
+            <p>My role is welcoming new members by introducing them to Slack and <br>
+                making themn feel apart of the community. I am also in charge of <br>
+                increases engagement of new members, so that they feel a part of <br>
+                the community.</p>
+
+            <h2>Interests</h2>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Programming</li>
+                <li>Plants</li>
+                <li>Art</li>
+            </ul>
+
+            <!-- Displays image-->
+            <h2>This is me!</h2>
+            <img src = "DrawingOfMe.jpg" alt = "Picture of me" style = "height: 500px;">
+            
+        </div>
+          
+        <!--Third Tab-->
+        <div id="Art" class="tabcontent">
+            <h3>Art</h3>
+            
+        </div>
+    
+        <script>
+
+            function openTab(evt, nameOfTab) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(nameOfTab).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+
+        </script>   
     </body>
 </html>
