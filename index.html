@@ -47,6 +47,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+            text-align: center;
         }
 
 
@@ -73,7 +74,8 @@
         }
 
         h2{
-            padding-top: 15px;
+            padding-top: 10px;
+            font-size: 30px;
         }
 
         p{
@@ -83,6 +85,8 @@
         li{
             font-size: 18px;
         }
+
+      
         body{
             font-family: system-ui;
             background:seashell;
@@ -101,8 +105,8 @@
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
             <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-            <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
             <button class="tablinks" onclick="openTab(event, 'Recipes')">Recipes</button>
+            <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
         </div>
           
         <!--First Tab -Default-->
@@ -142,7 +146,7 @@ computer science, while also learning about the mind!
             <h3>Assitant to Director of Onboarding and Recuritment</h3>
             <h4>@ Technolgap</h4>
             <p>My role is welcoming new members by introducing them to Slack and <br>
-                making themn feel apart of the community. I am also in charge of <br>
+                making them feel apart of the community. I am also in charge of <br>
                 increases engagement of new members, so that they feel a part of <br>
                 the community.</p>
 
@@ -153,16 +157,43 @@ computer science, while also learning about the mind!
         </div>
           
         <!--Third Tab-->
-        <div id="Art" class="tabcontent">
-            <h1>Art</h1>
+        <div id="Recipes" class="tabcontent">
+            <h1 class = "center">My Recipes</h1>
+            <h2>Banana Bread</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>3 bananas</li>
+                <li>1/3 cup of melted butter</li>
+                <li>1/2 cup of sugar</li>
+                <li>1 tsp of vanilla</li>
+                <li>1 tsp of baking soda</li>
+                <li>1 tsp of choice of spice, like cinnamon</li>
+                <li>Pinch of salt</li>
+                <li>1 1/2 cups of flour</li>
+                <li>1/2 cup of white or milk chocolate chips</li>
+            </ul>
+
+            <h3>Steps</h3>
+            <ol>
+                <li>Preheat oven to 350F and grease pan</li>
+                <li>Add bananas to a medium sized bowl, and mash them</li>
+                <li>Add melted butter to bananas and stir well</li>
+                <li>Add sugar, baking soda, spice, vanilla, salt, flour and egg to bananas</li>
+                <li>Add chocolate chips to bowl, and lightly stir.</li>
+                <li>Pour mixture into greased pan, and add some chocolate chips on top</li>
+                <li>Bake for about 50 mins to an hour</li>
+                <li>Enjoy some warm banana bread!</li>
+            </ol>
             
         </div>
 
+
         <!--Fourth Tab-->
-        <div id="Recipes" class="tabcontent">
-            <h1>My Recipes</h1>
+        <div id="Art" class="tabcontent">
+            <h1 class = "center">Art</h1>
             
         </div>
+        
     
         <script>
 
