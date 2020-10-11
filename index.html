@@ -63,6 +63,28 @@
             margin: 5px;       
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            /*clear: right;*/
+            padding: 50px;
+            width: 33.33%;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #picOfMe{
+            padding-top: 10%;
+        }
+
         .content{
             margin:0;
             padding:10px;
@@ -139,8 +161,17 @@
         <!--Second Tab-->
         <div id="About" class="tabcontent">
             <!--About-->
+
+
             <div id = "container"><h1 class = "content">Meagan<br> Choo-Kang</h1></div> 
-            <h2>About</h2>
+
+        
+            <div class = "row">
+                <div class = "column">
+                    <img src = "DrawingOfMe.jpg"  id = "picOfMe" alt = "Picture of me" style = "width: 100%;">
+                </div>
+                <div class = "column">
+                    <h2>About</h2>
             <pre>Hello World! I'm a <strong>cognitive science</strong> student intersted in making 
 progams and websites! I often get asked what <i>exactly</i> is cognitive science. 
 It is the study of the mind from various perspectives, since the mind is very 
@@ -150,9 +181,7 @@ is focused in using computer science to understand the mind. The mind works
 alot like a computer program and I am interested in learning more about 
 computer science, while also learning about the mind!
         </pre>
-
-            <img src = "Brain.PNG" alt = "Illustration of Brain" style = "width:550px;">
-
+            
             <h2>Interests</h2>
             <ul>
                 <li>Artificial Intelligence</li>
@@ -161,7 +190,14 @@ computer science, while also learning about the mind!
                 <li>Baking</li>
                 <li>Art</li>
             </ul>
+                </div>
+            </div>
 
+            
+
+            <img src = "Brain.PNG" alt = "Illustration of Brain" style = "width:40%;">
+
+            
             <h2>Experience</h2>
             <h3>Assitant to Director of Onboarding and Recuritment @ Technolgap</h3>
             <p>My role is welcoming new members by introducing them to Slack and <br>
@@ -169,9 +205,13 @@ computer science, while also learning about the mind!
                 increases engagement of new members, so that they feel a part of <br>
                 the community.</p>
 
-            <!-- Displays image-->
-            <h2>This is me!</h2>
-            <img src = "DrawingOfMe.jpg" alt = "Picture of me" style = "height: 500px;">
+            <h2>Connect with Me:</h2>
+            <ul> 
+                <li><a = href="https://linkedin.com/in/meagan-choo-kang/">Linkedin</a> </li>
+                <li><a = href="https://github.com/meaganck">GitHub</a></li>
+            </ul>
+
+            
             
         </div>
           
