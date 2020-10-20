@@ -54,7 +54,7 @@
             color: #3e4444;
         }
         .bg-3 { 
-            background-color:#ada397 ;
+            background-color:#ada397;
             color: #ffffff;
         }
 
@@ -73,13 +73,18 @@
         }
 
         .jumbotron {
-            background-color:#404040 ; 
-            color:white;
-            padding-left: 30px;
+            background-color:#ada397 ; 
+            color:#ffffff;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            
         }
         .margin {margin-bottom: 45px;}
 
-      
+        .biggerHeading{
+            font-size: 80px;
+        }
+
         h1{
             font-size: 50px;
             font-weight: 900;
@@ -103,7 +108,7 @@
       
         body{
             font-family: 'Mulish';
-            background:#e6e2d3;
+            background:#ebebe0;
             color:  #4d4d4d;
         }
 
@@ -111,7 +116,6 @@
             height: 900px;
             
         }
-        
 
         .item img {
             position: absolute;
@@ -134,18 +138,22 @@
           
         <!--First Tab -Home-->
         <div id="Home" class="tabcontent">
+
+            <!--First Container in Home-->
             <div class="container-fluid bg-1 text-center">
                 <div class = "container">
-                    <h1 class = "margin">Meagan Choo-Kang</h1>
-                    <img class="img-responsive margin" src = "MainPic.jpg" alt = "Illustration of leaves" style="display:inline" width="80%">  
+                    <h1 class = "margin biggerHeading">Meagan Choo-Kang</h1>
+                    <img class="img-responsive margin img-circle" src = "MainPic.jpg" alt = "Girl with Braids" style="display:inline" width="80%">  
                 </div>
             </div>
-
+            
+            <!--Second Container in Home -Who Am I?-->
             <div class="container-fluid bg-2 text-center">
                 <h2>Who Am I?</h2>
                     <h3 class = "margin">Student, Coder, and Artist.</h3>
             </div>
 
+            <!--Third Container in Home -Skills-->
             <div class="container-fluid bg-3 text-center">
                     <h2 class= "margin">Top Skills</h2><br>
                     <div class = "row">
@@ -164,19 +172,21 @@
                     </div>
             </div>
 
+            <!--Last Container in Home -Footer-->
             <footer class="container-fluid bg-4 text-center">
                 <p>This website is still in progress,  <a href = "https://github.com/meaganck/meaganck.github.io/wiki">here are my plans for this website</a><p>
             </footer>
         </div>
-          
+
+
+
         <!--Second Tab -About-->
         <div id="About" class="tabcontent">
-            <div class = "jumbotron"><h1 >Meagan<br> Choo-Kang</h1></div> 
+            <!--Jumbotron-->
+            <div class = "jumbotron"><h1 class = "biggerHeading">Hello World</h1><p class = "margin">I am Meagan Choo-Kang.</p></div> 
                     
             <!--About-->
             <h2>About</h2>
-
-            <!--I don't like how this looks, but I like how it looks on the website-->
             <p>Hello World! I'm a <strong>cognitive science</strong> student intersted in making <br> 
             progams and websites! I often get asked what <i>exactly</i> is cognitive science. <br>
             It is the study of the mind from various perspectives, since the mind is very  <br>
@@ -199,7 +209,6 @@
                 <li>Sustainability</li>
             </ul>
              
-            
             <!--My experience-->
             <h2>Experience</h2>
             <h3>Assitant to Director of Onboarding and Recuritment @ Technolgap</h3>
@@ -215,12 +224,13 @@
         </div>
           
 
-        <!--Third Tab-->
+
+        <!--Third Tab -Recipes-->
         <div id="Recipes" class="tabcontent">
 
             <div class = "container">
-                <h1 class = "center">My Recipes</h1><br>
-                <img class="img-responsive" src = "Yummm.PNG" alt = "yumm" style="width:80%;"> <br>
+                <h1 class = "text-center">My Recipes</h1><br>
+                <img class="img-responsive img-circle center-block" src = "Yummm.PNG" alt = "yumm" style="width:80%;"> <br>
             </div>
             
             <h2>Banana Bread</h2>
@@ -248,17 +258,19 @@
                 <li>Bake for about 50 mins to an hour</li>
                 <li>Enjoy some warm banana bread!</li>
             </ol>
-            
         </div>
 
 
-        <!--Fourth Tab-->
+
+        <!--Fourth Tab - Artwork-->
         <div id="Art" class="tabcontent">
            
             <div class = "container">
                 <h1>Art</h1>
                 <p>In my free time, I love to draw, mainly people! Though, I cannot draw guys, so all you will see will be girls, and some animals and plants!
                 Also, my art style varies a lot, so you will see a variation of graphic illustrations to realistic art!  :))</p>
+                
+                <!--Carousel for displaying art-->
                 <div id = "myCarousel" class = "carousel slide" data-ride= "carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -291,7 +303,7 @@
                             </div>
                        </div>
                    </div> 
-                    <!-- Left and right controls -->
+                    <!-- Left and right controls of Carousel-->
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
@@ -300,12 +312,12 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
-            </div> <!--Container-->
-            
+                </div><!-- End of Carousel-->
+            </div> 
         </div>
         
     
+        <!--Some JavaScript-->
         <script>
 
             function openTab(evt, nameOfTab) {
@@ -324,7 +336,6 @@
 
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
-
         </script>   
     </body>
 </html>
