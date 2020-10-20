@@ -46,20 +46,33 @@
             padding: 6px 12px;
             border-top: none;
         }
-
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
+        .bg-1 { 
+     
+        }
+        .bg-2 { 
+            background-color:  #eeac99;
+            color: #ffffff;
+        }
+        .bg-3 { 
+            background-color: #d96459;
+            color: #ffffff;
         }
 
+        .bg-4 {
+            background-color: #2f2f2f;
+            color: #ffffff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
 
         .jumbotron {
             background-color:#404040 ; 
             color:white;
             padding-left: 30px;
         }
+        .margin {margin-bottom: 45px;}
 
       
         h1{
@@ -116,14 +129,26 @@
           
         <!--First Tab -Home-->
         <div id="Home" class="tabcontent">
-            <div class = "container">
-            <h1>Meagan Choo-Kang</h1> <br>
-            <img class="img-responsive" src = "MainPic.jpg" alt = "Illustration of leaves" style="width:80%;"> 
+            <div class="container-fluid bg-1 text-center">
+                <div class = "container">
+                    <h1 class = "margin">Meagan Choo-Kang</h1>
+                    <img class="img-responsive margin" src = "MainPic.jpg" alt = "Illustration of leaves" style="display:inline" width="70%">  
+                </div>
             </div>
-            <div class="footer">
-                <p>* All pictures on this website are drawn or taken by me!<br>
-                This website is still in progress,  <a href = "https://github.com/meaganck/meaganck.github.io/wiki">here are my plans for this website</a><p>
+
+            <div class="container-fluid bg-2 text-center">
+                <h2>Who Am I?</h2>
+                    <h3 class = "margin">Student, Coder, and Artist.</h3>
             </div>
+
+            <div class="container-fluid bg-3 text-center">
+                    <h2>Hello</h2>
+                    <h3 class = "margin">Welcome to my website! Feel free to look around!</h3>
+            </div>
+
+            <footer class="container-fluid bg-4 text-center">
+                <p>This website is still in progress,  <a href = "https://github.com/meaganck/meaganck.github.io/wiki">here are my plans for this website</a><p>
+            </footer>
         </div>
           
         <!--Second Tab -About-->
@@ -227,7 +252,7 @@
                        <div class = "item active">
                            <img src ="Witcher.jpg" alt = "Yennifer from The Witcher" style="width: 100%;">
                            <div class="carousel-caption">
-                                <h1>Yennifer</h1>
+                                <h1>Yennefer</h1>
                                 <h3>From the Witcher</h3>
                           </div>
                        </div>
