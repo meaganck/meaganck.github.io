@@ -67,6 +67,9 @@
             color:#ffffff;
             font-size: 100px;
         }
+        .up-logo{
+            font-size: 30px;
+        }
         .container-fluid {
             padding-top: 70px;
             padding-bottom: 70px;
@@ -94,6 +97,15 @@
 
         .biggerHeading{
             font-size: 80px;
+        }
+
+        footer a:hover {
+            color: #ebebe0;
+            text-decoration: none;
+        }
+
+        footer a {
+            color: #ebebe0; 
         }
 
         h1{
@@ -154,7 +166,7 @@
     }
   } 
     </style>
-    <body>
+    <body id="myPage" >
 
         <!--My tabs-->
         <div class="tab">
@@ -202,7 +214,10 @@
 
             <!--Last Container in Home -Footer-->
             <footer class="container-fluid bg-4 text-center">
-                <p>This website is still in progress,  <a href = "https://github.com/meaganck/meaganck.github.io/wiki">here are my plans for this website</a><p>
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up up-logo"></span>
+                    <div class = "margin"></div>
+                <p>This website is still in progress,  <a href = "https://github.com/meaganck/meaganck.github.io/wiki"><em>here are my plans for this website</em></a><p>
             </footer>
         </div>
 
@@ -253,7 +268,10 @@
                 <a href = "https://github.com/meaganck"><img src="GitHub-Mark-120px-plus.png" alt = "GitHub Link"></a>
                 <div class = "margin"></div>
             </div>   
-            <footer class="container-fluid bg-4 text-center"></footer>     
+            <footer class="container-fluid bg-4 text-center">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up up-logo"></span> </a>
+            </footer>     
         </div>
           
 
@@ -316,8 +334,6 @@
                         <span class="sr-only">Next</span>
                       </a>
                 </div>
-
-            
             
                 <h2>Banana Bread</h2>
                 <h3>Ingredients:</h3>
@@ -346,6 +362,8 @@
                 </ol>
             </div>
             <footer class="container-fluid bg-4 text-center">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up up-logo"></span> </a>
                 <!--<img class="img-responsive img-circle center-block" src = "Yummm.PNG" alt = "yumm" style="width:30%;"> <br>-->
             </footer> 
         </div>
@@ -409,7 +427,10 @@
 
             
             <div class = "margin"></div>
-            <footer class="container-fluid bg-4 text-center"></footer> 
+            <footer class="container-fluid bg-4 text-center">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up up-logo"></span> </a>
+            </footer> 
         </div>
 
         
@@ -433,6 +454,12 @@
 
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
+
+
+            $(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+})
         </script>   
     </body>
 </html>
