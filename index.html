@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <!-- Got code on how to make tabs on w3schools: https://www.w3schools.com/howto/howto_js_tabs.asp-->
     </head> 
     <style>
         /* Style the tab */
@@ -75,7 +74,6 @@
             padding-bottom: 70px;
         }
     
-
         .aboutJumbotron {
             background-color:#ada397 ; 
             color:#ffffff;
@@ -135,36 +133,20 @@
             color:  #4d4d4d;
         }
 
-        /*
-        .carousel .item {
-            height: 500px;
-            
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
         }
 
-        .item img {
-            position: absolute;
-            object-fit:cover;
-            top: 0;
-            left: 0;
-            min-height: 500px;
-           
+        .carousel-caption h3 {
+            color: #fff !important;
         }
-        */
-        
-
-.carousel-inner img {
-
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  } 
+  
+        @media (max-width: 600px) {
+            .carousel-caption {
+            display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+        } 
     </style>
     <body id="myPage" >
 
@@ -278,9 +260,9 @@
 
         <!--Third Tab -Recipes-->
         <div id="Recipes" class="tabcontent">
-
             <div class = "container">
                 <h1 class = "text-center margin">My Favourite Recipes</h1>
+
                 <!--Carousel for displaying Recipe-->
                 <div id = "myCarousel" class = "carousel slide" data-ride= "carousel">
                     <ol class="carousel-indicators">
@@ -391,15 +373,15 @@
                   </div>
                   <div class="col-sm-3"> 
                     <p>Some text..</p>
-                    <img src="Zucker.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="Bob.jpg" class="img-responsive" style="width:100%" alt="Image">
                   </div>
                   <div class="col-sm-3"> 
                     <p>Some text..</p>
-                    <img src="PeonyGirl.JPG" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="Avocado.jpg" class="img-responsive" style="width:100%" alt="Image">
                   </div>
                   <div class="col-sm-3">
                     <p>Some text..</p>
-                    <img src="DrawingOfMe.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="Portrait.jpg" class="img-responsive" style="width:100%" alt="Image">
                   </div>
                 </div>
               </div><br>
@@ -416,7 +398,7 @@
                   </div>
                   <div class="col-sm-3"> 
                     <p>Some text..</p>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="Tired.JPG" class="img-responsive" style="width:100%" alt="Image">
                   </div>
                   <div class="col-sm-3">
                     <p>Some text..</p>
@@ -425,7 +407,6 @@
                 </div>
               </div><br><br>
 
-            
             <div class = "margin"></div>
             <footer class="container-fluid bg-4 text-center">
                 <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
@@ -435,9 +416,8 @@
 
         
     
-        <!--Some JavaScript-->
         <script>
-
+            // for tabs
             function openTab(evt, nameOfTab) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
@@ -457,9 +437,9 @@
 
 
             $(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
-})
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+            })
         </script>   
     </body>
 </html>
