@@ -141,3 +141,13 @@
             display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
         } 
+
+        .label-default{
+            font-size: 16px;
+           
+        }
+
+        .label-primary{
+            background-color: #ada397 ;
+            font-size: 16px;
+        }
