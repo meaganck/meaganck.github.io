@@ -37,15 +37,15 @@
 
         /* Styles backgrounds of blocks */
         .bg-1 { 
-            background-color:#ebebe0;
+            background-color:#f2f2f2;
         }
         .bg-2 { 
-            background-color:  #e6e2d3;
-            color: #3e4444;
+            background-color: #ada397;
+            color:#ffffff ;
         }
         .bg-3 { 
-            background-color:#ada397;
-            color: #ffffff;
+            background-color:#f2f2f2;
+            color:#4d4d4d;
         }
 
         .bg-4 {
@@ -55,7 +55,7 @@
 
         /* Styles logos */
         .logo-small {
-            color:#ffffff;
+            color:#ada397;
             font-size: 100px;
         }
         .up-logo{
@@ -75,11 +75,6 @@
             
         }
 
-        .artJumbotron {
-            background-color:  #e6e2d3;
-            color: #3e4444;
-            
-        }
 
         /* Styles footers */
         footer a:hover {
@@ -122,7 +117,7 @@
       
         body{
             font-family: 'Mulish';
-            background:#ebebe0;
+            background: #f2f2f2;
             color:  #4d4d4d;
         }
 
@@ -154,4 +149,6 @@
 
         .progress-bar-striped{
             background-color: #ada397;
+
         }
+        /* might change background to this again #ebebe0 and #e6e2d3 */
