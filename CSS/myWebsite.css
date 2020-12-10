@@ -1,7 +1,7 @@
           /* Style the tab */
         .tab {
             overflow: hidden;
-            background-color:#3e4444;     
+            background-color:#ffc6c7;     
         }
 
         /* Style the buttons inside the tab */
@@ -20,12 +20,12 @@
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: dimgray;
+            background-color: #ff8ba7;
         }
 
         /* Create an active/current tablink class */
         .tab button.active {
-            background-color:  dimgray;
+            background-color: #ff8ba7;
         }
 
         /* Style the tab content */
@@ -37,25 +37,25 @@
 
         /* Styles backgrounds of blocks */
         .bg-1 { 
-            background-color:#f2f2f2;
+            background-color:#fffffe;
         }
         .bg-2 { 
-            background-color: #ada397;
-            color:#ffffff ;
+            background-color: #faeee7;
+            color:#594a4e ;
         }
         .bg-3 { 
-            background-color:#f2f2f2;
-            color:#4d4d4d;
+            background-color:#fffffe;
+            color:#594a4e;
         }
 
         .bg-4 {
-            background-color:#3e4444;
-            color: #ffffff;
+            background-color:#ffc6c7;
+            color: #594a4e;
         }
 
         /* Styles logos */
         .logo-small {
-            color:#ada397;
+            color:#ffc6c7;
             font-size: 100px;
         }
         .up-logo{
@@ -68,8 +68,8 @@
     
         /* Styles jumbotrons */
         .aboutJumbotron {
-            background-color:#ada397 ; 
-            color:#ffffff;
+            background-color:#faeee7 ; 
+            color:#594a4e;
             padding-left: 50px;
             padding-bottom: 50px;
             
@@ -78,12 +78,12 @@
 
         /* Styles footers */
         footer a:hover {
-            color: #ebebe0;
+            color: #594a4e;
             text-decoration: none;
         }
 
         footer a {
-            color: #ebebe0; 
+            color: #594a4e; 
         }
         
         /* Adds more spacing */
@@ -117,8 +117,8 @@
       
         body{
             font-family: 'Mulish';
-            background: #f2f2f2;
-            color:  #4d4d4d;
+            background: #fffffe;
+            color:  #594a4e;
         }
 
         /* Styles carousel */
@@ -139,16 +139,19 @@
 
         .label-default{
             font-size: 16px;
+            background-color: #ffc6c7;
+            color: #594a4e ;
            
         }
 
         .label-primary{
-            background-color: #ada397 ;
+            background-color: #ff8ba7 ;
+            color: #594a4e ;
             font-size: 16px;
         }
 
         .progress-bar-striped{
-            background-color: #ada397;
+            background-color: #c3f0ca;
 
         }
         /* might change background to this again #ebebe0 and #e6e2d3 */
