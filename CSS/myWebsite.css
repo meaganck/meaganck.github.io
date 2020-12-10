@@ -1,7 +1,7 @@
           /* Style the tab */
         .tab {
             overflow: hidden;
-            background-color:#ffc6c7;     
+            background-color:#fffffe;     
         }
 
         /* Style the buttons inside the tab */
@@ -15,7 +15,7 @@
             transition: 0.3s;
             font-size: 20px;
             font-family: system-ui;
-            color:seashell;   
+            color:#594a4e;   
         }
 
         /* Change background color of buttons on hover */
@@ -68,8 +68,8 @@
     
         /* Styles jumbotrons */
         .aboutJumbotron {
-            background-color:#faeee7 ; 
-            color:#594a4e;
+            background-color:#ffc6c7 ; 
+            color:#33272a;
             padding-left: 50px;
             padding-bottom: 50px;
             
