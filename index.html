@@ -16,6 +16,7 @@
             <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
             <button class="tablinks" onclick="openTab(event, 'About')">About</button>
             <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
             <button class="tablinks" onclick="openTab(event, 'Recipes')">Recipes</button>
             <button class="tablinks" onclick="openTab(event, 'Art')">Art</button>
         </div>
@@ -118,7 +119,15 @@
 
                 <!--My experience-->
                 <h1 class ="text-center margin">Experience</h1>
+                <h2>Graphic Designer</h2> <br>
+                <span class ="label label-primary">Technolgap</span>
+                <span class ="label label-default">Jan 2021 - Present</span>
                 
+                <p class ="margin"><br>I use <b>Figma</b> to create designs for Technolgap to advertise events and for designing
+                    posts for their social media pages.
+                </p> <div class ="margin"></div>
+
+
                 <h2>Assistant to Director of Onboarding and Recuritment</h2> <br>
                 <span class ="label label-primary">Technolgap</span>
                 <span class ="label label-default">Sept 2020 - Dec 2020</span>
@@ -208,6 +217,31 @@
                     <span class="glyphicon glyphicon-chevron-up up-logo"></span> </a>
             </footer>  
         </div>
+
+        <!--Projects Tab-->
+        <div id="Projects" class="tabcontent">
+            <div class="jumbotron aboutJumbotron"><h1 class= "margin">Projects</h1></div>
+            <div class="container">
+                <h2>Grade Calculator</h2>
+                <span class ="label label-primary">Java</span>
+                <span class ="label label-default">javafx</span>
+                <p class ="margin"><br>Add your grades to this GUI, and it will show your current grade before an exam and what mark you need on your exam to achieve your goal!
+                This program uses the <b>javafx</b> library to create the user interface window. I also used the <b>Model-View-Controller design</b> to structure
+                this program. The model contains the user's grades that they input, and methods that sort and calculate their grade. The view
+                contains all the code for how the GUI looks, and there is a class for each window(the main window, and classes for each pop-up window).
+                The controller handles all the user interactions with the buttons from the view. <br><a href = "https://github.com/meaganck/Grade-Calculator">Check it out!</a></p>
+                
+
+                <h2>Reversi AI</h2>
+                <span class ="label label-primary">C</span>
+                <p class ="margin"><br>This program lets you play a game of Reversi against an AI! At the begining of the program, 
+                    the user is prompted to choice their colour and the size of the board. Then, the game will start, and the AI will play against
+                    the computer.<br><a href = "https://github.com/meaganck/Reversi-AI">Check it out!</a></p>
+                
+
+            </div>
+        </div>
+
 
         <!--Fourth Tab -Recipes-->
         <div id="Recipes" class="tabcontent">
